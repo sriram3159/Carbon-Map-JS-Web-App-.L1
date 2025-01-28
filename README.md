@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Carbon Map JS Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application designed to display carbon intensity data on a map. This project provides users with real-time information about carbon emissions and energy consumption, helping individuals and organizations make environmentally-conscious decisions.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time Carbon Intensity Data**: View current carbon emissions levels across different regions.
+- **Map Integration**: Visualize data on an interactive map using geographical data.
+- **Data Filters**: Filter and explore carbon intensity data based on specific parameters.
+- **Responsive Design**: Access the application on various devices with ease.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js**: JavaScript library for building the user interface.
+- **Mapbox**: Map rendering and geospatial data.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Chart.js**: Display data in visual formats like bar charts and line graphs.
+- **API Integration**: Fetches real-time carbon intensity data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed:
 
-### `npm run build`
+- **Node.js**
+- **npm** or **yarn**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/sriram3159/Carbon-Map-JS-Web-App.git
+    cd Carbon-Map-JS-Web-App
+    ```
 
-### `npm run eject`
+2. Install the required dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    or if you are using yarn:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    yarn install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Set up your environment variables (e.g., Mapbox access token). Create a `.env` file in the root of your project and add:
 
-## Learn More
+    ```bash
+    REACT_APP_MAP_ACCESS_TOKEN=your_mapbox_token_here
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+    or with yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    yarn start
+    ```
 
-### Analyzing the Bundle Size
+   This will open the application in your browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Environment Variables
 
-### Making a Progressive Web App
+- `REACT_APP_MAP_ACCESS_TOKEN`: Your Mapbox access token for rendering maps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+1. Fork the repository.
+2. Create a new branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```bash
+    git checkout -b feature-name
+    ```
 
-### Deployment
+3. Make your changes.
+4. Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```bash
+    git commit -am 'Add new feature'
+    ```
 
-### `npm run build` fails to minify
+5. Push to the branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    git push origin feature-name
+    ```
+
+6. Create a new Pull Request.
+
