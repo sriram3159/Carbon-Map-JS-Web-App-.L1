@@ -2,11 +2,13 @@
   "name": "Carbon-Map-JS-Web-App-L1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sriram3159.github.io/Carbon-Map-JS-Web-App-.L1/",
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/postcss": "^4.0.0",
     "cra-template": "1.2.0",
+    "gh-pages": "^6.3.0",
     "mapbox-gl": "^3.9.4",
     "postcss-loader": "^8.1.1",
     "react": "^18.0.0",
@@ -19,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
